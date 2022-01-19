@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<link rel="browser icon" href="../src/favicon.ico" />
+	<title>Professsionalism | Bannon Lawn Care</title>
+	<style>
+		header {
+		background-color: #D2EBCB;
+		}
+		body {
+		background-color:#D2EBCB;
+		}
+		img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		}
+		.Professionalism {
+		font-family:"Berlin Sans FB";
+		padding: 0px 0px 5px 0px;
+		font-size:xx-large;
+		text-align: center;
+		}
+		.GalleryDesc {
+		padding: 0px 0px 10px 0px;
+		font-size:medium;
+		text-align: center;
+		}
+		* {box-sizing:border-box}
+		.slideshow-container {
+		max-width: 1000px;
+		max-height: 30%;
+		position: relative;
+		margin: auto;
+		}
+		.mySlides {
+		display: none;
+		}
+		.prev, .next {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		margin-top: -22px;
+		padding: 16px;
+		color: white;
+		font-weight: bold;
+		font-size: 18px;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+		}
+		.next {
+		right: 0;
+		border-radius: 3px 0 0 3px;
+		}
+		.prev:hover, .next:hover {
+		background-color: rgba(0,0,0,0.8);
+		}
+		.text {
+		color: #f2f2f2;
+		font-size: 15px;
+		padding: 8px 12px;
+		position: absolute;
+		bottom: 8px;
+		width: 100%;
+		text-align: center;
+		}
+		.numbertext {
+		color: #f2f2f2;
+		font-size: 12px;
+		padding: 8px 12px;
+		position: absolute;
+		top: 0;
+		}
+		.dot {
+		cursor: pointer;
+		height: 15px;
+		width: 15px;
+		margin: 0 2px;
+		background-color: #bbb;
+		border-radius: 50%;
+		display: inline-block;
+		transition: background-color 0.6s ease;
+		}
+		.active, .dot:hover {
+		background-color: #717171;
+		}
+		.fade {
+		-webkit-animation-name: fade;
+		-webkit-animation-duration: 1.5s;
+		animation-name: fade;
+		animation-duration: 1.5s;
+		}
+		@-webkit-keyframes fade {
+		from {opacity: .4}
+		to {opacity: 1}
+		}
+		@keyframes fade {
+		from {opacity: .4}
+		to {opacity: 1}
+		}
+		.footer1 {
+		font-family: "Times New Roman", Times, serif;
+		font-size: large;
+		text-align: center;
+		}
+		.footer2 {
+		font-family: "Times New Roman", Times, serif;
+		font-size: medium;
+		text-align: center;
+		}
+		ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #D2EBCB;
+		}
+		li {
+		float: right;
+		}
+		li a {
+		display: block;
+		color: black;
+		text-align: center;
+		font-size: large;
+		padding: 32px 16px;
+		text-decoration: none;
+		}
+		li a:hover {
+		background-color: green;
+		color: white;
+		}
+	</style>
+</head>
+<body>
+	<header style="height: 100px">
+		<a href="../index.html">
+			<img src="../src/logo.jpg" alt="Bannon Lawn Care Logo" width="250" height="82" style="float: left">
+		</a>
+		<div>
+			<ul style="height: 100px">
+			  <li><a href="./contact-us.html">Contact Us!</a></li>
+			  <li><a href="#">Professionalism</a></li>
+			  <li><a href="./about-us.html">About Us</a></li>
+			  <li><a href="./services.html">Services</a></li>
+			  <li><a href="../index.html">Home</a></li>
+			</ul>
+		</div>
+	</header>
+	<h1 class="Professionalism">Professionalism</h1>
+	<p class="GalleryDesc">A collection of the high-quality work that Bannon Lawn Care regularly administers to its satisfied customers</p>	
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 6</div>
+			<img src="../src/prof1.jpg" style="width:100%">
+		</div>
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 6</div>
+			<img src="../src/prof2.jpg" style="width:100%">
+		</div>
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 6</div>
+			<img src="../src/prof3.jpg" style="width:100%">
+		</div>
+		<div class="mySlides fade">
+			<div class="numbertext">4 / 6</div>
+			<img src="../src/prof4.jpg" style="width:100%">
+		</div>
+		<div class="mySlides fade">
+			<div class="numbertext">5 / 6</div>
+			<img src="../src/prof5.jpg" style="width:100%">
+		</div>
+		<div class="mySlides fade">
+			<div class="numbertext">6 / 6</div>
+			<img src="../src/prof6.jpg" style="width:100%">
+		</div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
+			<span class="dot" onclick="currentSlide(6)"></span>
+		</div>
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  var captionText = document.getElementById("caption");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		  captionText.innerHTML = dots[slideIndex-1].alt;
+		}
+		</script>
+	<footer>
+		<p class="footer1"> <b>Contact Us!</b></p>
+		<p class="footer2">Email: <a href="mailto:Bannonlawncare@gmail.com">Bannonlawncare@gmail.com</a><br>
+    	Phone: <a href="tel:17818014805">+1 (781) 801-4085</a></p>
+	</footer>
+</body>
+</html>
